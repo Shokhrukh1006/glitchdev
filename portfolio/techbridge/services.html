@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Услуги — TechBridge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="demo-banner">
+  <strong>Демо-проект</strong>
+  Это демо-проект агентства GlitchDev — не реальная компания. Хотите такой сайт?
+  <a href="https://t.me/glitchdev_uz_bot" target="_blank">→ t.me/glitchdev_uz_bot</a>
+</div>
+
+<header id="header">
+  <div class="nav-logo">
+    <span class="logo-name">Tech<span>Bridge</span></span>
+    <span class="logo-sub" data-i18n="logo_sub">IT-решения для бизнеса</span>
+  </div>
+  <nav class="nav-center">
+    <a href="index.html" data-i18n="nav_home">Главная</a>
+    <a href="about.html" data-i18n="nav_about">О компании</a>
+    <a href="services.html" class="active" data-i18n="nav_services">Услуги</a>
+    <a href="contacts.html" data-i18n="nav_contacts">Контакты</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="uz">UZ</button>
+    </div>
+    <a href="contacts.html" class="nav-cta-btn" data-i18n="nav_cta">Связаться</a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-i18n="nav_home">Главная</a>
+  <a href="about.html" data-i18n="nav_about">О компании</a>
+  <a href="services.html" data-i18n="nav_services">Услуги</a>
+  <a href="contacts.html" data-i18n="nav_contacts">Контакты</a>
+  <a href="contacts.html" class="mobile-cta" data-i18n="nav_cta">Связаться</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html" data-i18n="nav_home">Главная</a>
+      <span>→</span>
+      <span data-i18n="nav_services">Услуги</span>
+    </div>
+    <h1 data-i18n="svc_hero_title">Услуги</h1>
+    <p data-i18n="svc_hero_sub">Всё для вашего цифрового присутствия</p>
+  </div>
+</section>
+
+<!-- SERVICES DETAIL -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-tag" data-i18n="sd_tag">Что мы делаем</div>
+      <h2 class="section-title" data-i18n="sd_title">Полный <em>спектр IT-услуг</em></h2>
+    </div>
+    <div class="services-detail-grid">
+
+      <div class="sd-card fade-up">
+        <div class="sd-head">
+          <div class="sd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3 data-i18n="sd1_title">Разработка сайтов</h3>
+        </div>
+        <p data-i18n="sd1_text">Создаём сайты любой сложности — от простых landing page до многостраничных корпоративных сайтов.</p>
+        <ul class="sd-list">
+          <li data-i18n="sd1_li1">Landing page от $300 за 1 день</li>
+          <li data-i18n="sd1_li2">Корпоративный сайт от $500 за 3 дня</li>
+          <li data-i18n="sd1_li3">Интернет-магазин от $700</li>
+          <li data-i18n="sd1_li4">Адаптивный дизайн под мобайл</li>
+        </ul>
+        <div class="sd-price"><span data-i18n="sd1_price">от $300</span></div>
+      </div>
+
+      <div class="sd-card fade-up">
+        <div class="sd-head">
+          <div class="sd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+          <h3 data-i18n="sd2_title">Мобильные приложения</h3>
+        </div>
+        <p data-i18n="sd2_text">Разрабатываем приложения для iOS и Android под ключ — от идеи до публикации в Store.</p>
+        <ul class="sd-list">
+          <li data-i18n="sd2_li1">iOS и Android приложения</li>
+          <li data-i18n="sd2_li2">Flutter / React Native</li>
+          <li data-i18n="sd2_li3">API-интеграции и бэкенд</li>
+          <li data-i18n="sd2_li4">Публикация в App Store / Google Play</li>
+        </ul>
+        <div class="sd-price"><span data-i18n="sd2_price">от $1,500</span></div>
+      </div>
+
+      <div class="sd-card fade-up">
+        <div class="sd-head">
+          <div class="sd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+          <h3 data-i18n="sd3_title">CRM-системы</h3>
+        </div>
+        <p data-i18n="sd3_text">Внедряем и настраиваем Bitrix24, AmoCRM под ваш бизнес. Автоматизируем продажи.</p>
+        <ul class="sd-list">
+          <li data-i18n="sd3_li1">Настройка воронки продаж</li>
+          <li data-i18n="sd3_li2">Интеграция с сайтом и телефонией</li>
+          <li data-i18n="sd3_li3">Перенос базы клиентов</li>
+          <li data-i18n="sd3_li4">Обучение команды</li>
+        </ul>
+        <div class="sd-price"><span data-i18n="sd3_price">от $400</span></div>
+      </div>
+
+      <div class="sd-card fade-up">
+        <div class="sd-head">
+          <div class="sd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12.1 19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <h3 data-i18n="sd4_title">IP-телефония / ОАТС</h3>
+        </div>
+        <p data-i18n="sd4_text">Подбираем и настраиваем облачную АТС для вашего бизнеса. Интеграция с CRM.</p>
+        <ul class="sd-list">
+          <li data-i18n="sd4_li1">Подбор провайдера ОАТС</li>
+          <li data-i18n="sd4_li2">Настройка SIP-телефонии</li>
+          <li data-i18n="sd4_li3">Интеграция с Bitrix24 / AmoCRM</li>
+          <li data-i18n="sd4_li4">Запись звонков и аналитика</li>
+        </ul>
+        <div class="sd-price"><span data-i18n="sd4_price">от $200</span></div>
+      </div>
+
+      <div class="sd-card fade-up">
+        <div class="sd-head">
+          <div class="sd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <h3 data-i18n="sd5_title">SEO и продвижение</h3>
+        </div>
+        <p data-i18n="sd5_text">Выводим сайт в топ Google. Настраиваем рекламу в Google Ads и Yandex Direct.</p>
+        <ul class="sd-list">
+          <li data-i18n="sd5_li1">Техническая SEO-оптимизация</li>
+          <li data-i18n="sd5_li2">Контентная стратегия</li>
+          <li data-i18n="sd5_li3">Google Ads / Yandex Direct</li>
+          <li data-i18n="sd5_li4">Ежемесячная отчётность</li>
+        </ul>
+        <div class="sd-price"><span data-i18n="sd5_price">от $150/мес</span></div>
+      </div>
+
+      <div class="sd-card fade-up">
+        <div class="sd-head">
+          <div class="sd-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3 data-i18n="sd6_title">Техническая поддержка</h3>
+        </div>
+        <p data-i18n="sd6_text">Ежемесячное обслуживание сайта. Обновления, резервные копии, мониторинг.</p>
+        <ul class="sd-list">
+          <li data-i18n="sd6_li1">Обновления контента</li>
+          <li data-i18n="sd6_li2">Резервные копии ежедневно</li>
+          <li data-i18n="sd6_li3">Мониторинг доступности 24/7</li>
+          <li data-i18n="sd6_li4">Техническая помощь</li>
+        </ul>
+        <div class="sd-price"><span data-i18n="sd6_price">от $50/мес</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-tag" data-i18n="proc_tag">Как мы работаем</div>
+      <h2 class="section-title" data-i18n="proc_title">Прозрачный <em>процесс</em></h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step fade-up">
+        <div class="step-num">1</div>
+        <h3 data-i18n="step1_title">Анализ</h3>
+        <p data-i18n="step1_text">Брифинг, изучение бизнеса и конкурентов. Составляем ТЗ.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-num">2</div>
+        <h3 data-i18n="step2_title">Дизайн</h3>
+        <p data-i18n="step2_text">Прототип в Figma, согласование, финальный макет.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-num">3</div>
+        <h3 data-i18n="step3_title">Разработка</h3>
+        <p data-i18n="step3_text">Вёрстка, программирование, тестирование на всех устройствах.</p>
+      </div>
+      <div class="process-step fade-up">
+        <div class="step-num">4</div>
+        <h3 data-i18n="step4_title">Запуск</h3>
+        <p data-i18n="step4_text">Деплой, передача доступов, инструктаж команды.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-tag" data-i18n="price_tag">Стоимость</div>
+      <h2 class="section-title" data-i18n="price_title">Прозрачные <em>цены</em></h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card fade-up">
+        <div class="pricing-name" data-i18n="plan1_name">Стартовый</div>
+        <div class="pricing-price">$300</div>
+        <div class="pricing-period" data-i18n="plan1_period">Landing page · 1 день</div>
+        <ul class="pricing-list">
+          <li data-i18n="plan1_li1">Одностраничный сайт</li>
+          <li data-i18n="plan1_li2">Адаптивный дизайн</li>
+          <li data-i18n="plan1_li3">Форма обратной связи</li>
+          <li data-i18n="plan1_li4">Настройка хостинга</li>
+        </ul>
+        <a href="contacts.html" class="pricing-btn" data-i18n="price_btn">Заказать</a>
+      </div>
+      <div class="pricing-card featured fade-up">
+        <div class="pricing-badge" data-i18n="plan2_badge">Популярный</div>
+        <div class="pricing-name" data-i18n="plan2_name">Бизнес</div>
+        <div class="pricing-price">$500</div>
+        <div class="pricing-period" data-i18n="plan2_period">Корпоративный сайт · 3 дня</div>
+        <ul class="pricing-list">
+          <li data-i18n="plan2_li1">Многостраничный сайт</li>
+          <li data-i18n="plan2_li2">Адаптивный дизайн</li>
+          <li data-i18n="plan2_li3">RU/UZ двуязычность</li>
+          <li data-i18n="plan2_li4">CMS для управления</li>
+          <li data-i18n="plan2_li5">SEO-оптимизация</li>
+        </ul>
+        <a href="contacts.html" class="pricing-btn" data-i18n="price_btn">Заказать</a>
+      </div>
+      <div class="pricing-card fade-up">
+        <div class="pricing-name" data-i18n="plan3_name">Премиум</div>
+        <div class="pricing-price">$1000<span style="font-size:20px">+</span></div>
+        <div class="pricing-period" data-i18n="plan3_period">Веб-приложение · до 7 дней</div>
+        <ul class="pricing-list">
+          <li data-i18n="plan3_li1">Сложная логика</li>
+          <li data-i18n="plan3_li2">Личный кабинет</li>
+          <li data-i18n="plan3_li3">API интеграции</li>
+          <li data-i18n="plan3_li4">CRM + телефония</li>
+        </ul>
+        <a href="contacts.html" class="pricing-btn" data-i18n="price_btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2 data-i18n="cta_title">Готовы обсудить <em>ваш проект</em>?</h2>
+    <p data-i18n="cta_sub">Оставьте заявку — ответим в течение 30 минут в рабочее время</p>
+    <div class="cta-btns">
+      <a href="contacts.html" class="btn-primary" data-i18n="cta_btn1">Обсудить проект</a>
+      <a href="https://t.me/glitchdev_uz_bot" target="_blank" class="btn-outline" data-i18n="cta_btn2">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-name">Tech<span>Bridge</span></div>
+        <p class="footer-desc" data-i18n="footer_desc">IT-компания в Ташкенте. Сайты, приложения, CRM-системы и техническая поддержка для бизнеса.</p>
+      </div>
+      <div>
+        <div class="footer-heading" data-i18n="footer_nav">Навигация</div>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
+          <li><a href="about.html" data-i18n="nav_about">О компании</a></li>
+          <li><a href="services.html" data-i18n="nav_services">Услуги</a></li>
+          <li><a href="contacts.html" data-i18n="nav_contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading" data-i18n="footer_contacts">Контакты</div>
+        <ul class="footer-links">
+          <li><a href="tel:+998712000505">+998 71 200 05 05</a></li>
+          <li><a href="mailto:info@techbridge.uz">info@techbridge.uz</a></li>
+          <li><a>ул. Амира Темура, 107Б</a></li>
+          <li><a>Ташкент, Узбекистан</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy" data-i18n="footer_copy">© 2026 TechBridge Solutions · Ташкент</div>
+      <div class="footer-dev" data-i18n="footer_dev">Сайт разработан <a href="https://t.me/glitchdev_uz_bot" target="_blank">GlitchDev</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechBridge — IT-решения для бизнеса</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+  <strong>Демо-проект</strong>
+  Это демо-проект агентства GlitchDev — не реальная компания. Хотите такой сайт?
+  <a href="https://t.me/glitchdev_uz_bot" target="_blank">→ t.me/glitchdev_uz_bot</a>
+</div>
+
+<!-- HEADER -->
+<header id="header">
+  <div class="nav-logo">
+    <span class="logo-name">Tech<span>Bridge</span></span>
+    <span class="logo-sub" data-i18n="logo_sub">IT-решения для бизнеса</span>
+  </div>
+  <nav class="nav-center">
+    <a href="index.html" class="active" data-i18n="nav_home">Главная</a>
+    <a href="about.html" data-i18n="nav_about">О компании</a>
+    <a href="services.html" data-i18n="nav_services">Услуги</a>
+    <a href="contacts.html" data-i18n="nav_contacts">Контакты</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="uz">UZ</button>
+    </div>
+    <a href="contacts.html" class="nav-cta-btn" data-i18n="nav_cta">Связаться</a>
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-i18n="nav_home">Главная</a>
+  <a href="about.html" data-i18n="nav_about">О компании</a>
+  <a href="services.html" data-i18n="nav_services">Услуги</a>
+  <a href="contacts.html" data-i18n="nav_contacts">Контакты</a>
+  <a href="contacts.html" class="mobile-cta" data-i18n="nav_cta">Связаться</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content fade-up">
+        <div class="hero-badge" data-i18n="hero_badge">Ташкент · С 2020 года</div>
+        <h1 class="hero-title">
+          <span data-i18n="hero_title_1">IT-решения</span><br>
+          <em data-i18n="hero_title_2">для роста</em><br>
+          <span data-i18n="hero_title_3">вашего бизнеса</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero_sub">Разрабатываем сайты, мобильные приложения и внедряем CRM-системы для компаний в Узбекистане.</p>
+        <div class="hero-btns">
+          <a href="contacts.html" class="btn-primary" data-i18n="hero_btn1">Обсудить проект</a>
+          <a href="services.html" class="btn-outline" data-i18n="hero_btn2">Наши услуги</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-up">
+        <div class="hero-card">
+          <div class="hero-card-title" data-i18n="card_title">Статистика проектов</div>
+          <div class="hero-metric">
+            <div class="num">60<span>+</span></div>
+            <div class="lbl" data-i18n="card_metric">проектов сдано</div>
+          </div>
+          <div class="hero-bars">
+            <div class="hero-bar-item">
+              <div class="hero-bar-label"><span data-i18n="bar1">Сайты</span><span>42</span></div>
+              <div class="hero-bar-track"><div class="hero-bar-fill" data-w="70%"></div></div>
+            </div>
+            <div class="hero-bar-item">
+              <div class="hero-bar-label"><span data-i18n="bar2">Мобильные приложения</span><span>11</span></div>
+              <div class="hero-bar-track"><div class="hero-bar-fill" data-w="18%"></div></div>
+            </div>
+            <div class="hero-bar-item">
+              <div class="hero-bar-label"><span data-i18n="bar3">CRM внедрения</span><span>7</span></div>
+              <div class="hero-bar-track"><div class="hero-bar-fill" data-w="12%"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-section">
+  <div class="container">
+    <div class="stats-bar fade-up">
+      <div class="stat-item">
+        <div class="stat-num" data-i18n="stat1_num">6+</div>
+        <div class="stat-label" data-i18n="stat1_label">лет опыта</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-i18n="stat2_num">60+</div>
+        <div class="stat-label" data-i18n="stat2_label">проектов</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-i18n="stat3_num">45+</div>
+        <div class="stat-label" data-i18n="stat3_label">клиентов</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num" data-i18n="stat4_num">12</div>
+        <div class="stat-label" data-i18n="stat4_label">специалистов</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-tag" data-i18n="svc_tag">Услуги</div>
+      <h2 class="section-title" data-i18n="svc_title">Что мы <em>делаем</em></h2>
+      <p class="section-sub" data-i18n="svc_sub">Полный цикл разработки и поддержки цифровых продуктов для вашего бизнеса</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3 data-i18n="s1_title">Разработка сайтов</h3>
+        <p data-i18n="s1_text">Landing page, корпоративные сайты и интернет-магазины под ключ с адаптивным дизайном.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+        <h3 data-i18n="s2_title">Мобильные приложения</h3>
+        <p data-i18n="s2_text">Нативные и кроссплатформенные приложения для iOS и Android под ваш бизнес.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+        <h3 data-i18n="s3_title">CRM-системы</h3>
+        <p data-i18n="s3_text">Внедрение и настройка Bitrix24, AmoCRM. Автоматизация продаж и учёт клиентов.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h3 data-i18n="s4_title">IT-консалтинг</h3>
+        <p data-i18n="s4_text">Подбор и настройка программного обеспечения. Цифровизация бизнес-процессов.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+        <h3 data-i18n="s5_title">SEO и продвижение</h3>
+        <p data-i18n="s5_text">Вывод сайта в топ Google и Yandex. Рост органического трафика и заявок.</p>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3 data-i18n="s6_title">Техподдержка</h3>
+        <p data-i18n="s6_text">Ежемесячное обслуживание сайта, обновления, резервные копии и защита.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section>
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-tag" data-i18n="cases_tag">Портфолио</div>
+      <h2 class="section-title" data-i18n="cases_title">Наши <em>проекты</em></h2>
+    </div>
+    <div class="cases-grid">
+      <div class="case-card fade-up">
+        <div class="case-img" style="background:linear-gradient(135deg,#0B1120,#1a2340)">
+          <span style="font-size:44px;font-weight:900;color:rgba(67,97,238,0.55);font-family:sans-serif">NL</span>
+        </div>
+        <div class="case-body">
+          <div class="case-cat" data-i18n="case1_cat">Корпоративный портал</div>
+          <h3 data-i18n="case1_title">Nexus Logistics</h3>
+          <p data-i18n="case1_text">Корпоративный портал с личным кабинетом, трекингом грузов и интеграцией с 1С.</p>
+        </div>
+      </div>
+      <div class="case-card fade-up">
+        <div class="case-img" style="background:linear-gradient(135deg,#0f2b1a,#1a4a28)">
+          <span style="font-size:44px;font-weight:900;color:rgba(52,199,89,0.55);font-family:sans-serif">AM</span>
+        </div>
+        <div class="case-body">
+          <div class="case-cat" data-i18n="case2_cat">E-commerce каталог</div>
+          <h3 data-i18n="case2_title">AgroMax</h3>
+          <p data-i18n="case2_text">Каталог сельскохозяйственной продукции с онлайн-заказом и CRM-интеграцией.</p>
+        </div>
+      </div>
+      <div class="case-card fade-up">
+        <div class="case-img" style="background:linear-gradient(135deg,#0e1c2b,#1a3048)">
+          <span style="font-size:44px;font-weight:900;color:rgba(10,132,255,0.55);font-family:sans-serif">MC</span>
+        </div>
+        <div class="case-body">
+          <div class="case-cat" data-i18n="case3_cat">Медицинский сайт</div>
+          <h3 data-i18n="case3_title">MedCenter Plus</h3>
+          <p data-i18n="case3_text">Сайт медицинского центра с записью на приём, врачами и онлайн-консультацией.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-head fade-up">
+      <div class="section-tag" data-i18n="rev_tag">Отзывы</div>
+      <h2 class="section-title" data-i18n="rev_title">Что говорят <em>клиенты</em></h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fade-up">
+        <div class="review-quote">"</div>
+        <p class="review-text" data-i18n="rev1_text">TechBridge сделали нам корпоративный портал за 5 дней. Работают чётко, в бюджете. Отдельное спасибо за интеграцию с нашей 1С.</p>
+        <div class="review-author">
+          <div class="review-avatar">СТ</div>
+          <div>
+            <div class="review-name" data-i18n="rev1_name">Санжар Тошматов</div>
+            <div class="review-role" data-i18n="rev1_role">CEO, Nexus Logistics</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-quote">"</div>
+        <p class="review-text" data-i18n="rev2_text">Обращались к трём разработчикам — только TechBridge поняли задачу с первого раза. Продажи выросли на 30% после запуска.</p>
+        <div class="review-author">
+          <div class="review-avatar">ГР</div>
+          <div>
+            <div class="review-name" data-i18n="rev2_name">Гузаль Рашидова</div>
+            <div class="review-role" data-i18n="rev2_role">Директор, AgroMax</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-quote">"</div>
+        <p class="review-text" data-i18n="rev3_text">Внедрили Bitrix24 и IP-телефонию за неделю. Теперь все звонки пишутся, заявки не теряются. Очень довольны результатом.</p>
+        <div class="review-author">
+          <div class="review-avatar">ТЮ</div>
+          <div>
+            <div class="review-name" data-i18n="rev3_name">Тимур Юлдашев</div>
+            <div class="review-role" data-i18n="rev3_role">Главврач, MedCenter Plus</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <h2 data-i18n="cta_title">Готовы обсудить <em>ваш проект</em>?</h2>
+    <p data-i18n="cta_sub">Оставьте заявку — ответим в течение 30 минут в рабочее время</p>
+    <div class="cta-btns">
+      <a href="contacts.html" class="btn-primary" data-i18n="cta_btn1">Обсудить проект</a>
+      <a href="https://t.me/glitchdev_uz_bot" target="_blank" class="btn-outline" data-i18n="cta_btn2">Написать в Telegram</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-name">Tech<span>Bridge</span></div>
+        <p class="footer-desc" data-i18n="footer_desc">IT-компания в Ташкенте. Сайты, приложения, CRM-системы и техническая поддержка для бизнеса.</p>
+      </div>
+      <div>
+        <div class="footer-heading" data-i18n="footer_nav">Навигация</div>
+        <ul class="footer-links">
+          <li><a href="index.html" data-i18n="nav_home">Главная</a></li>
+          <li><a href="about.html" data-i18n="nav_about">О компании</a></li>
+          <li><a href="services.html" data-i18n="nav_services">Услуги</a></li>
+          <li><a href="contacts.html" data-i18n="nav_contacts">Контакты</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-heading" data-i18n="footer_contacts">Контакты</div>
+        <ul class="footer-links">
+          <li><a href="tel:+998712000505">+998 71 200 05 05</a></li>
+          <li><a href="mailto:info@techbridge.uz">info@techbridge.uz</a></li>
+          <li><a>ул. Амира Темура, 107Б</a></li>
+          <li><a>Ташкент, Узбекистан</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy" data-i18n="footer_copy">© 2026 TechBridge Solutions · Ташкент</div>
+      <div class="footer-dev" data-i18n="footer_dev">Сайт разработан <a href="https://t.me/glitchdev_uz_bot" target="_blank">GlitchDev</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
