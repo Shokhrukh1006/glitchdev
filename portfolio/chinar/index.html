@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chinar — Ресторан узбекской кухни · Ташкент</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- DEMO BANNER -->
+<div class="demo-banner">
+  Это демо-проект агентства GlitchDev — не реальное заведение.
+  <a href="https://t.me/glitchdev_uz_bot" target="_blank">Хотите такой сайт?</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div>
+    <div class="logo-text">Chinar</div>
+    <div class="logo-sub" data-i18n="logo_sub">Ресторан узбекской кухни</div>
+  </div>
+  <nav>
+    <a href="#about" data-i18n="nav_about">О нас</a>
+    <a href="#menu" data-i18n="nav_menu">Меню</a>
+    <a href="#atmosphere" data-i18n="nav_atm">Атмосфера</a>
+    <a href="#reviews" data-i18n="nav_rev">Отзывы</a>
+    <a href="#booking" data-i18n="nav_book">Контакты</a>
+  </nav>
+  <div class="header-right">
+    <div class="lang-toggle">
+      <button class="lang-btn active" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="uz">UZ</button>
+    </div>
+    <a href="#booking" class="header-cta" data-i18n="nav_cta">Забронировать</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-i18n="hero_badge">Ташкент · С 2019 года</div>
+    <h1 class="hero-title">
+      <span data-i18n="hero_title_1">Вкус</span>
+      <span data-i18n="hero_title_2"> традиций</span><br>
+      <em data-i18n="hero_title_3">Атмосфера уюта</em>
+    </h1>
+    <div class="hero-divider"></div>
+    <p class="hero-sub" data-i18n="hero_sub">Настоящая узбекская кухня в сердце Ташкента.<br>Открыты каждый день с 11:00 до 23:00.</p>
+    <div class="hero-btns">
+      <a href="#booking" class="btn-gold" data-i18n="hero_btn1">Забронировать стол</a>
+      <a href="#menu" class="btn-outline" data-i18n="hero_btn2">Посмотреть меню</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">5+</div>
+        <div class="hero-stat-label" data-i18n="stat1">лет в Ташкенте</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">40+</div>
+        <div class="hero-stat-label" data-i18n="stat2">блюд в меню</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">120</div>
+        <div class="hero-stat-label" data-i18n="stat3">посадочных мест</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual fade-up">
+        <div class="about-visual-inner">
+          <div class="ornament">چنار</div>
+          <div class="about-visual-label" data-i18n="visual_label">Chinar · Ташкент</div>
+        </div>
+        <div class="about-badge">
+          <div class="about-badge-num">2019</div>
+          <div class="about-badge-txt" data-i18n="badge_txt">с нами</div>
+        </div>
+      </div>
+      <div class="fade-up">
+        <div class="section-tag" data-i18n="about_tag">О ресторане</div>
+        <h2 class="section-title" data-i18n="about_title">Место где<br><em>собирается семья</em></h2>
+        <div class="gold-line"></div>
+        <p class="section-sub" data-i18n="about_text">Ресторан Chinar — это место, где каждое блюдо готовится с любовью и уважением к традициям узбекской кухни. Мы используем только свежие продукты и рецепты, передающиеся из поколения в поколение.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <div class="about-feature-title" data-i18n="feat1_title">Свежие продукты</div>
+              <div class="about-feature-text" data-i18n="feat1_text">Овощи и зелень каждое утро с рынка Чорсу</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <div class="about-feature-title" data-i18n="feat2_title">Живая музыка</div>
+              <div class="about-feature-text" data-i18n="feat2_text">По пятницам и субботам с 19:00</div>
+            </div>
+          </div>
+          <div class="about-feature">
+            <div class="about-feature-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div>
+              <div class="about-feature-title" data-i18n="feat3_title">Банкеты и события</div>
+              <div class="about-feature-text" data-i18n="feat3_text">Организуем свадьбы, юбилеи, корпоративы</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <div class="section-tag" data-i18n="nav_menu">Меню</div>
+      <h2 class="section-title" data-i18n="menu_title">Наши <em>фирменные блюда</em></h2>
+      <div class="gold-line" style="margin:16px auto 0"></div>
+    </div>
+    <div class="menu-grid">
+
+      <div class="menu-card fade-up">
+        <div class="menu-img">🍚</div>
+        <div class="menu-body">
+          <div class="menu-category" data-i18n="cat_main">Основное</div>
+          <div class="menu-name" data-i18n="dish1_name">Плов по-фергански</div>
+          <div class="menu-desc" data-i18n="dish1_desc">Классический ферганский плов с бараниной, морковью и нутом. Готовится в казане на открытом огне.</div>
+          <div class="menu-footer">
+            <div class="menu-price">45 000</div>
+            <div class="menu-weight" data-i18n="dish1_w">400 г</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card fade-up">
+        <div class="menu-img">🥩</div>
+        <div class="menu-body">
+          <div class="menu-category" data-i18n="cat_grill">Мангал</div>
+          <div class="menu-name" data-i18n="dish2_name">Шашлык из баранины</div>
+          <div class="menu-desc" data-i18n="dish2_desc">Молодая баранина, маринованная в луке и специях. Подаётся с лепёшкой и свежими овощами.</div>
+          <div class="menu-footer">
+            <div class="menu-price">55 000</div>
+            <div class="menu-weight" data-i18n="dish2_w">300 г</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card fade-up">
+        <div class="menu-img">🥟</div>
+        <div class="menu-body">
+          <div class="menu-category" data-i18n="cat_app">Закуски</div>
+          <div class="menu-name" data-i18n="dish3_name">Манты с тыквой</div>
+          <div class="menu-desc" data-i18n="dish3_desc">Сочные манты с начинкой из говядины и тыквы. Подаются со сметаной и зеленью.</div>
+          <div class="menu-footer">
+            <div class="menu-price">38 000</div>
+            <div class="menu-weight" data-i18n="dish3_w">6 шт</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card fade-up">
+        <div class="menu-img">🍜</div>
+        <div class="menu-body">
+          <div class="menu-category" data-i18n="cat_soup">Супы</div>
+          <div class="menu-name" data-i18n="dish4_name">Лагман домашний</div>
+          <div class="menu-desc" data-i18n="dish4_desc">Тянутая домашняя лапша с говядиной и сезонными овощами. Наваристый бульон на косточке.</div>
+          <div class="menu-footer">
+            <div class="menu-price">32 000</div>
+            <div class="menu-weight" data-i18n="dish4_w">500 мл</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card fade-up">
+        <div class="menu-img">🫓</div>
+        <div class="menu-body">
+          <div class="menu-category" data-i18n="cat_bread">Выпечка</div>
+          <div class="menu-name" data-i18n="dish5_name">Самса тандирная</div>
+          <div class="menu-desc" data-i18n="dish5_desc">Слоёная самса с мясом из тандыра. Хрустящее тесто, сочная начинка с луком и зирой.</div>
+          <div class="menu-footer">
+            <div class="menu-price">12 000</div>
+            <div class="menu-weight" data-i18n="dish5_w">1 шт</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card fade-up">
+        <div class="menu-img">🍵</div>
+        <div class="menu-body">
+          <div class="menu-category" data-i18n="cat_drink">Напитки</div>
+          <div class="menu-name" data-i18n="dish6_name">Зелёный чай с мятой</div>
+          <div class="menu-desc" data-i18n="dish6_desc">Традиционный зелёный чай с горной мятой. Подаётся в пиале с сушёными фруктами.</div>
+          <div class="menu-footer">
+            <div class="menu-price">8 000</div>
+            <div class="menu-weight" data-i18n="dish6_w">чайник</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ATMOSPHERE -->
+<section id="atmosphere">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-tag" data-i18n="atm_tag">Атмосфера</div>
+      <h2 class="section-title" data-i18n="atm_title">Интерьер и <em>пространство</em></h2>
+    </div>
+    <div class="atm-grid">
+      <div class="atm-cell fade-up">
+        <div class="atm-glow"></div>
+        <div class="atm-cell-icon">🏛</div>
+        <div class="atm-cell-label" data-i18n="atm1">Главный зал</div>
+      </div>
+      <div class="atm-cell fade-up">
+        <div class="atm-glow"></div>
+        <div class="atm-cell-icon">🌿</div>
+        <div class="atm-cell-label" data-i18n="atm2">Летняя веранда</div>
+      </div>
+      <div class="atm-cell fade-up">
+        <div class="atm-glow"></div>
+        <div class="atm-cell-icon">🎎</div>
+        <div class="atm-cell-label" data-i18n="atm3">VIP-комната</div>
+      </div>
+      <div class="atm-cell fade-up">
+        <div class="atm-glow"></div>
+        <div class="atm-cell-icon">🔥</div>
+        <div class="atm-cell-label" data-i18n="atm4">Открытая кухня</div>
+      </div>
+      <div class="atm-cell fade-up">
+        <div class="atm-glow"></div>
+        <div class="atm-cell-icon">🎵</div>
+        <div class="atm-cell-label" data-i18n="atm5">Живая музыка</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="container">
+    <div class="fade-up" style="text-align:center">
+      <div class="section-tag" data-i18n="nav_rev">Отзывы</div>
+      <h2 class="section-title" data-i18n="rev_title">Что говорят <em>гости</em></h2>
+      <div class="gold-line" style="margin:16px auto 0"></div>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card fade-up">
+        <div class="review-quote-mark">"</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text" data-i18n="rev1_text">Лучший плов в Ташкенте — это не преувеличение. Приходим сюда каждую пятницу всей семьёй уже два года. Атмосфера тёплая, персонал внимательный.</div>
+        <div class="review-author">
+          <div class="review-avatar">А</div>
+          <div>
+            <div class="review-name" data-i18n="rev1_name">Акбаров Санжар</div>
+            <div class="review-role" data-i18n="rev1_role">Постоянный гость</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-quote-mark">"</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text" data-i18n="rev2_text">Отмечали юбилей мужа на 40 человек. Всё организовали идеально — от украшения зала до меню. Отдельное спасибо шеф-повару за самсу!</div>
+        <div class="review-author">
+          <div class="review-avatar">М</div>
+          <div>
+            <div class="review-name" data-i18n="rev2_name">Мирзаева Нилуфар</div>
+            <div class="review-role" data-i18n="rev2_role">Банкет, 40 гостей</div>
+          </div>
+        </div>
+      </div>
+      <div class="review-card fade-up">
+        <div class="review-quote-mark">"</div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text" data-i18n="rev3_text">Заказывали корпоратив на 25 человек. Живая музыка, вкусная еда, цены адекватные. Коллеги до сих пор вспоминают. Обязательно вернёмся!</div>
+        <div class="review-author">
+          <div class="review-avatar">Р</div>
+          <div>
+            <div class="review-name" data-i18n="rev3_name">Рашидов Тимур</div>
+            <div class="review-role" data-i18n="rev3_role">Корпоратив</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="container">
+    <div class="booking-grid">
+      <div class="fade-up">
+        <div class="section-tag" data-i18n="book_tag">Бронирование</div>
+        <h2 class="section-title" data-i18n="book_title">Забронируйте<br><em>ваш стол</em></h2>
+        <div class="gold-line"></div>
+        <div class="booking-info">
+          <div class="booking-info-item">
+            <div class="booking-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="booking-info-label" data-i18n="info1_label">Адрес</div>
+              <div class="booking-info-val" data-i18n="info1_val">ул. Амира Темура, 15, Ташкент</div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="booking-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="booking-info-label" data-i18n="info2_label">Время работы</div>
+              <div class="booking-info-val" data-i18n="info2_val">Ежедневно 11:00 — 23:00</div>
+            </div>
+          </div>
+          <div class="booking-info-item">
+            <div class="booking-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.27a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+            </div>
+            <div>
+              <div class="booking-info-label" data-i18n="info3_label">Телефон</div>
+              <div class="booking-info-val">+998 71 200 00 00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="booking-form fade-up">
+        <h3 data-i18n="form_title">Забронировать стол</h3>
+        <p data-i18n="form_sub">Заполните форму — мы перезвоним для подтверждения</p>
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="f_name">Ваше имя</label>
+              <input type="text" data-i18n-ph="f_name_ph" placeholder="Имя" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="f_phone">Телефон</label>
+              <input type="tel" placeholder="+998 __ ___ __ __" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-i18n="f_date">Дата</label>
+              <input type="date" required>
+            </div>
+            <div class="form-group">
+              <label data-i18n="f_time">Время</label>
+              <select required>
+                <option value="">--:--</option>
+                <option>11:00</option><option>12:00</option><option>13:00</option>
+                <option>14:00</option><option>15:00</option><option>16:00</option>
+                <option>17:00</option><option>18:00</option><option>19:00</option>
+                <option>20:00</option><option>21:00</option><option>22:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-i18n="f_guests">Количество гостей</label>
+            <select required>
+              <option value="" data-i18n="f_guests_ph">Выберите</option>
+              <option>1–2 человека</option>
+              <option>3–5 человек</option>
+              <option>6–10 человек</option>
+              <option>11–20 человек</option>
+              <option data-i18n="f_guests_more">Больше 20 (банкет)</option>
+            </select>
+          </div>
+          <button type="submit" class="form-submit" data-i18n="f_submit">Забронировать</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo-text">Chinar</div>
+        <p class="footer-desc" data-i18n="footer_desc">Ресторан узбекской кухни в сердце Ташкента. Традиции, вкус и уют с 2019 года.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title" data-i18n="footer_nav">Навигация</div>
+        <a href="#about" data-i18n="nav_about">О нас</a>
+        <a href="#menu" data-i18n="nav_menu">Меню</a>
+        <a href="#atmosphere" data-i18n="nav_atm">Атмосфера</a>
+        <a href="#reviews" data-i18n="nav_rev">Отзывы</a>
+        <a href="#booking" data-i18n="nav_book">Контакты</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title" data-i18n="footer_contacts">Контакты</div>
+        <p data-i18n="info1_val">ул. Амира Темура, 15</p>
+        <p data-i18n="info2_val">11:00 — 23:00</p>
+        <p>+998 71 200 00 00</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy" data-i18n="footer_copy">© 2026 Chinar Restaurant · Ташкент</div>
+      <div class="footer-glitch" data-i18n="footer_dev">Сайт разработан <a href="https://t.me/glitchdev_uz_bot" target="_blank">GlitchDev</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
