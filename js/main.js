@@ -470,3 +470,40 @@ document.querySelector('.contact-form')?.addEventListener('submit', async (e) =>
     btn.disabled = false;
   }
 });
+
+// ─── CALLBACK WIDGET TRACKING (Sarkor ОАТС) ───
+document.addEventListener('click', (e) => {
+  if (e.target.closest('#itlcb-call-btn')) {
+    window.gtag?.('event', 'callback_widget_open');
+  }
+});
+
+let callbackWidgetSent = false;
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('#itlcb-do-call') || callbackWidgetSent) return;
+
+  const phone = document.getElementById('itlcb-input')?.value?.trim();
+  if (!phone) return;
+
+  callbackWidgetSent = true;
+  window.gtag?.('event', 'callback_widget_submit');
+
+  fetch(
+    'https://api.telegram.org/bot8835986542:AAFtzH-82VaqDSDbWnN8R8gVVYO9jq8NXTE/sendMessage',
+    {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        chat_id: 7132096765,
+        text:
+          '📞 <b>Заявка — GlitchDev [ВИДЖЕТ ОБРАТНОГО ЗВОНКА]</b>\n' +
+          '━━━━━━━━━━━━━━━━━━━━\n' +
+          `📱 <b>Телефон:</b> ${phone}\n` +
+          '━━━━━━━━━━━━━━━━━━━━',
+        parse_mode: 'HTML',
+      }),
+    }
+  ).catch(() => {});
+
+  setTimeout(() => { callbackWidgetSent = false; }, 5000);
+});
