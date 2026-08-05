@@ -447,14 +447,17 @@ document.querySelector('.contact-form')?.addEventListener('submit', async (e) =>
   btn.disabled = true;
 
   try {
-    const res = await fetch(
-      'https://api.telegram.org/bot8835986542:AAFtzH-82VaqDSDbWnN8R8gVVYO9jq8NXTE/sendMessage',
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: 7132096765, text, parse_mode: 'HTML' }),
-      }
-    );
+    const sendTo = (chat_id) =>
+      fetch(
+        'https://api.telegram.org/bot8835986542:AAFtzH-82VaqDSDbWnN8R8gVVYO9jq8NXTE/sendMessage',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ chat_id, text, parse_mode: 'HTML' }),
+        }
+      );
+    const res = await sendTo(7132096765);
+    sendTo(-1004322873183).catch(() => {});
     if (!res.ok) throw new Error();
     btn.textContent = 'Заявка отправлена!';
     btn.style.background = '#00ff88';
@@ -488,22 +491,22 @@ document.addEventListener('click', (e) => {
   callbackWidgetSent = true;
   window.gtag?.('event', 'callback_widget_submit');
 
-  fetch(
-    'https://api.telegram.org/bot8835986542:AAFtzH-82VaqDSDbWnN8R8gVVYO9jq8NXTE/sendMessage',
-    {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: 7132096765,
-        text:
-          '📞 <b>Заявка — GlitchDev [ВИДЖЕТ ОБРАТНОГО ЗВОНКА]</b>\n' +
-          '━━━━━━━━━━━━━━━━━━━━\n' +
-          `📱 <b>Телефон:</b> ${phone}\n` +
-          '━━━━━━━━━━━━━━━━━━━━',
-        parse_mode: 'HTML',
-      }),
-    }
-  ).catch(() => {});
+  const widgetText =
+    '📞 <b>Заявка — GlitchDev [ВИДЖЕТ ОБРАТНОГО ЗВОНКА]</b>\n' +
+    '━━━━━━━━━━━━━━━━━━━━\n' +
+    `📱 <b>Телефон:</b> ${phone}\n` +
+    '━━━━━━━━━━━━━━━━━━━━';
+
+  [7132096765, -1004322873183].forEach((chat_id) => {
+    fetch(
+      'https://api.telegram.org/bot8835986542:AAFtzH-82VaqDSDbWnN8R8gVVYO9jq8NXTE/sendMessage',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id, text: widgetText, parse_mode: 'HTML' }),
+      }
+    ).catch(() => {});
+  });
 
   setTimeout(() => { callbackWidgetSent = false; }, 5000);
 });
